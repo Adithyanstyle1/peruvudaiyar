@@ -142,3 +142,57 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+#about {
+  background: #ffffff;
+  padding: 4rem 2rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+  max-width: 960px;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out both;
+  transition: transform 0.3s ease;
+}
+
+#about:hover {
+  transform: translateY(-5px);
+}
+
+#about h2 {
+  font-size: 2.2rem;
+  color: #003366;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.7;
+  font-weight: 400;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive text sizes */
+@media (max-width: 768px) {
+  #about h2 {
+    font-size: 1.7rem;
+  }
+  #about p {
+    font-size: 1rem;
+  }
+}
